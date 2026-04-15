@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coder Portfolio</title>
+  <meta name="description" content="Портфолио Vibe Coder: сайты, интерфейсы и digital-проекты с сильной подачей и структурой.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="noise"></div>
+  <div class="target-cursor-wrapper" aria-hidden="true">
+    <div class="target-cursor-dot"></div>
+    <div class="target-cursor-corner corner-tl"></div>
+    <div class="target-cursor-corner corner-tr"></div>
+    <div class="target-cursor-corner corner-br"></div>
+    <div class="target-cursor-corner corner-bl"></div>
+  </div>
+
+  <header class="hero section">
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="kicker">Vibe Coder / Portfolio / Web &amp; AI Experiences</p>
+          <h1 class="hero-title">
+            <span class="hero-title-main">Я делаю сайты, интерфейсы и digital-проекты</span>
+            <span
+              class="hero-title-accent text-type"
+              data-text-type='["которые выглядят как вайб","а работают как система","и хочется переслать дальше"]'
+              data-typing-speed="52"
+              data-deleting-speed="28"
+              data-pause-duration="1600"
+              data-initial-delay="280"
+            ></span>
+            <span class="text-type__cursor hero-title-cursor">|</span>
+          </h1>
+          <p class="lead">Не просто “что-то сверстать”, а собрать ощущение, стиль, логику и подачу так, чтобы проект хотелось открыть, листать и запомнить.</p>
+          <div class="cta-row">
+            <a href="#projects" class="btn btn-primary">Посмотреть проекты</a>
+            <a href="#contacts" class="btn btn-ghost">Обсудить задачу</a>
+          </div>
+        </div>
+        <figure class="hero-photo-wrap">
+          <img src="_7qmqmphxgrxlgdz5tnd3_1.png" alt="Портрет Vibe Coder" class="hero-photo">
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Я не просто пишу код — я собираю впечатление</h2>
+        <p>
+          Я работаю на стыке кода, визуала, UX и AI-инструментов. Для меня сайт — это не набор блоков.
+          Это ощущение от проекта, ритм, подача, структура и то, как человек чувствует себя внутри интерфейса.
+        </p>
+        <div class="chip-list">
+          <span class="chip">Лендинги</span>
+          <span class="chip">Портфолио</span>
+          <span class="chip">Промо-страницы</span>
+          <span class="chip">Интерфейсы</span>
+          <span class="chip">Спецпроекты</span>
+          <span class="chip">Digital-концепты</span>
+          <span class="chip">AI-first сайты и продукты</span>
+        </div>
+        <p>
+          Мой подход — сделать быстро, красиво и не бездумно. Чтобы проект не выглядел как очередной шаблон,
+          собранный без вкуса и идеи.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Что я делаю</h2>
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Лендинги</h3>
+            <p>Сайты, которые не просто “есть”, а собирают внимание, держат ритм и ведут человека по смыслу.</p>
+          </article>
+          <article class="card">
+            <h3>Портфолио и личные сайты</h3>
+            <p>Страницы, которые показывают не только работы, но и стиль, характер и уровень.</p>
+          </article>
+          <article class="card">
+            <h3>Визуальные концепты</h3>
+            <p>Когда нужен не просто сайт, а ощущение: атмосфера, характер, настроение, подача.</p>
+          </article>
+          <article class="card">
+            <h3>AI + Web</h3>
+            <p>Использую нейросети как инструмент ускорения и усиления идей, а не как замену мышлению.</p>
+          </article>
+          <article class="card">
+            <h3>UX и структура</h3>
+            <p>Продумываю, как человек читает, куда смотрит, где теряется и где принимает решение.</p>
+          </article>
+          <article class="card">
+            <h3>Быстрый запуск</h3>
+            <p>Могу собрать сильную первую версию быстро, без месяцев бесконечных согласований.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Как я работаю</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Сначала вайб</h3>
+              <p>Я смотрю не только на задачу, но и на ощущение, которое должен передавать проект.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Потом структура</h3>
+              <p>Красивый сайт без логики — это просто красивая обёртка. Поэтому я собираю смысл, сценарий и путь пользователя.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-number">03</span>
+            <div>
+              <h3>Потом реализация</h3>
+              <p>Когда есть стиль и логика, проект собирается быстрее, точнее и выглядит сильно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Избранные проекты</h2>
+        <div class="grid cards-2">
+          <article class="card project">
+            <h3>AI Landing Experience</h3>
+            <p>Лендинг для digital-продукта с акцентом на атмосферу, скорость восприятия и современный визуал.</p>
+            <p class="meta">Что сделано: структура, тексты, дизайн-концепция, сборка.</p>
+          </article>
+          <article class="card project">
+            <h3>Portfolio for Creative Expert</h3>
+            <p>Личный сайт-портфолио, который показывает не только кейсы, но и стиль человека.</p>
+            <p class="meta">Что сделано: позиционирование, подача, визуальный ритм, упаковка работ.</p>
+          </article>
+          <article class="card project">
+            <h3>Bot &amp; Funnel Page</h3>
+            <p>Промо-страница под воронку и digital-продукт с акцентом на конверсию и лёгкость восприятия.</p>
+            <p class="meta">Что сделано: логика блоков, тексты, CTA, визуальный каркас.</p>
+          </article>
+          <article class="card project">
+            <h3>Concept Site for AI Creator</h3>
+            <p>Сайт с упором на трендовую подачу, сильный первый экран и ощущение “это хочется переслать”.</p>
+            <p class="meta">Что сделано: creative direction, структура, визуальная концепция.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Почему ко мне идут не просто за кодом</h2>
+        <p>Потому что я умею видеть проект целиком. Не только как это собрать, но и как это подать, как это будет восприниматься, где человек зацепится взглядом, что запомнит и почему это будет выглядеть дороже, чем стоит.</p>
+        <p>Я соединяю: <strong>эстетику + структуру + digital-мышление + скорость</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Инструменты</h2>
+        <div class="chip-list">
+          <span class="chip">ChatGPT</span>
+          <span class="chip">Cursor</span>
+          <span class="chip">HTML / CSS / JS</span>
+          <span class="chip">React</span>
+          <span class="chip">Tailwind</span>
+          <span class="chip">Framer Motion</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Tilda / Webflow / custom</span>
+          <span class="chip">Telegram / Bots / AI tools</span>
+        </div>
+        <p>Но если честно — главный инструмент не стек, а вкус, насмотренность и умение собирать цельное впечатление.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Кому подойдёт моя работа</h2>
+        <ul class="audience">
+          <li>экспертам</li>
+          <li>креаторам</li>
+          <li>digital-проектам</li>
+          <li>AI-продуктам</li>
+          <li>студиям</li>
+          <li>тем, кому нужен сайт с характером</li>
+          <li>тем, кто не хочет шаблонную безликую страницу</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <blockquote>
+          Хороший сайт — это не когда “нормально сверстано”.
+          Это когда у проекта появляется энергия, форма и ощущение, что он живой.
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="testimonials-head">
+          <h2>Отзывы клиентов</h2>
+          <p>Ниже — реальные ощущения после запуска проектов: про скорость, стиль и то, как сайт начинает работать на бренд.</p>
+        </div>
+
+        <div class="testimonials-scroll" data-testimonials-scroll>
+          <div class="testimonials-sticky">
+            <div class="testimonials-stack" data-testimonials-stack>
+              <article class="testimonial-card cursor-target" data-card-index="0">
+                <p class="testimonial-rating" aria-label="Оценка 5 из 5">★★★★★</p>
+                <blockquote>Сайт собрали очень быстро, но при этом он выглядит дорого и цельно. Впервые получил страницу, которую не стыдно отправлять клиентам.</blockquote>
+                <div class="testimonial-author">
+                  <strong>Алексей М.</strong>
+                  <span>Эксперт по маркетингу</span>
+                </div>
+              </article>
+
+              <article class="testimonial-card cursor-target" data-card-index="1">
+                <p class="testimonial-rating" aria-label="Оценка 5 из 5">★★★★★</p>
+                <blockquote>Понравилось, что продуман не только дизайн, но и сценарий пользователя. Конверсия выросла уже на первой версии лендинга.</blockquote>
+                <div class="testimonial-author">
+                  <strong>Мария К.</strong>
+                  <span>Основатель digital-продукта</span>
+                </div>
+              </article>
+
+              <article class="testimonial-card cursor-target" data-card-index="2">
+                <p class="testimonial-rating" aria-label="Оценка 4.5 из 5">★★★★☆</p>
+                <blockquote>Очень сильный визуальный ритм и аккуратная структура. Сайт не шаблонный — чувствуется характер и позиционирование.</blockquote>
+                <div class="testimonial-author">
+                  <strong>Игорь С.</strong>
+                  <span>Креативный продюсер</span>
+                </div>
+              </article>
+
+              <article class="testimonial-card cursor-target" data-card-index="3">
+                <p class="testimonial-rating" aria-label="Оценка 5 из 5">★★★★★</p>
+                <blockquote>Получил не просто вёрстку, а полноценную упаковку: текст, акценты, подача, логика. Запуск прошёл без хаоса и лишних правок.</blockquote>
+                <div class="testimonial-author">
+                  <strong>Екатерина Л.</strong>
+                  <span>UI/UX дизайнер</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container">
+        <h2>Если тебе нужен сайт, который выглядит сильно и ощущается современно — давай соберём</h2>
+        <p>Могу помочь с концепцией, структурой, упаковкой и реализацией. От первого вайба до готовой страницы.</p>
+        <div class="cta-row">
+          <a href="#contacts" class="btn btn-primary">Написать мне</a>
+          <a href="#projects" class="btn btn-ghost">Посмотреть работы</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section" id="contacts">
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contacts">
+        <a href="https://t.me/yourname" target="_blank" rel="noopener noreferrer">Telegram: @yourname</a>
+        <a href="mailto:hello@yourmail.com">Email: hello@yourmail.com</a>
+        <a href="#" aria-label="Behance">Behance</a>
+        <a href="#" aria-label="Dribbble">Dribbble</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="Notion">Notion</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
