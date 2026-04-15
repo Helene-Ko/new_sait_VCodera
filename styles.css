@@ -1095,20 +1095,16 @@ blockquote::before {
     transform: none !important;
     opacity: 1 !important;
   }
-
-  .lang-switch-bar {
-    right: 50%;
-    transform: translateX(50%);
-    max-width: calc(100% - 1.2rem);
-  }
 }
 
 /* Language toggle — neo-noir, shadcn-like track + thumb */
 .lang-switch-bar {
   position: fixed;
   z-index: 10050;
+  left: auto;
   right: max(1rem, env(safe-area-inset-right));
   bottom: max(1rem, env(safe-area-inset-bottom));
+  transform: none;
   display: flex;
   align-items: center;
   gap: 0.65rem;
