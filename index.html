@@ -2,6 +2,27 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var u = new URL(window.location.href);
+        var p = u.pathname;
+        if (!p.endsWith("/")) {
+          if (/\.html?$/i.test(p)) {
+            p = p.replace(/\/[^/]+$/, "/");
+          } else {
+            p += "/";
+          }
+        }
+        u.pathname = p;
+        u.hash = "";
+        u.search = "";
+        var b = document.createElement("base");
+        b.href = u.href;
+        document.head.insertBefore(b, document.head.firstChild);
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vibe Coder Portfolio</title>
   <meta name="description" content="Портфолио Vibe Coder: сайты, интерфейсы и digital-проекты с сильной подачей и структурой.">
@@ -228,26 +249,185 @@
     <section class="section" id="projects">
       <div class="container">
         <h2 data-i18n="proj.h2">Избранные проекты</h2>
-        <div class="grid cards-2">
-          <article class="card project">
-            <h3 data-i18n="p1.h">AI Landing Experience</h3>
-            <p data-i18n="p1.d">Лендинг для digital-продукта с акцентом на атмосферу, скорость восприятия и современный визуал.</p>
-            <p class="meta" data-i18n="p1.m">Что сделано: структура, тексты, дизайн-концепция, сборка.</p>
+        <div class="grid cards-2 project-grid">
+          <article class="project-flip" tabindex="0" aria-labelledby="p1-h">
+            <div class="project-flip-inner">
+              <div class="project-flip-face project-flip-front">
+                <h3 id="p1-h" data-i18n="p1.h">AI Landing Experience</h3>
+                <div class="project-flip-media">
+                  <img
+                    src="images/project1-ai-landing.jpg"
+                    alt="Превью: AI Landing Experience"
+                    data-i18n="p1.alt"
+                    data-i18n-attr="alt"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="750"
+                  >
+                </div>
+              </div>
+              <div class="project-flip-face project-flip-back">
+                <p class="project-focus project-focus--back">
+                  <span class="project-ico" aria-hidden="true">🎯</span>
+                  <span data-i18n="p1.d">Лендинг для digital-продукта с акцентом на атмосферу, скорость восприятия и современный визуал.</span>
+                </p>
+                <div class="project-delivered">
+                  <p class="project-delivered-title">
+                    <span class="project-ico" aria-hidden="true">✅</span>
+                    <strong data-i18n="proj.deliveredLabel">Что сделано</strong>
+                  </p>
+                  <ul class="project-delivered-list">
+                    <li data-i18n="p1.l1">структура</li>
+                    <li data-i18n="p1.l2">тексты</li>
+                    <li data-i18n="p1.l3">дизайн-концепция</li>
+                    <li data-i18n="p1.l4">сборка</li>
+                  </ul>
+                </div>
+                <div class="project-tags">
+                  <span class="project-ico" aria-hidden="true">🏷️</span>
+                  <div class="project-tag-list">
+                    <span class="project-tag" data-i18n="p1.t1">#лендинг</span>
+                    <span class="project-tag" data-i18n="p1.t2">#digital</span>
+                    <span class="project-tag" data-i18n="p1.t3">#AI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
-          <article class="card project">
-            <h3 data-i18n="p2.h">Portfolio for Creative Expert</h3>
-            <p data-i18n="p2.d">Личный сайт-портфолио, который показывает не только кейсы, но и стиль человека.</p>
-            <p class="meta" data-i18n="p2.m">Что сделано: позиционирование, подача, визуальный ритм, упаковка работ.</p>
+          <article class="project-flip" tabindex="0" aria-labelledby="p2-h">
+            <div class="project-flip-inner">
+              <div class="project-flip-face project-flip-front">
+                <h3 id="p2-h" data-i18n="p2.h">Portfolio for Creative Expert</h3>
+                <div class="project-flip-media">
+                  <img
+                    src="images/project2-creative-portfolio.jpg"
+                    alt="Превью: Portfolio for Creative Expert"
+                    data-i18n="p2.alt"
+                    data-i18n-attr="alt"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="750"
+                  >
+                </div>
+              </div>
+              <div class="project-flip-face project-flip-back">
+                <p class="project-focus project-focus--back">
+                  <span class="project-ico" aria-hidden="true">🎯</span>
+                  <span data-i18n="p2.d">Личный сайт-портфолио, который показывает не только кейсы, но и стиль человека.</span>
+                </p>
+                <div class="project-delivered">
+                  <p class="project-delivered-title">
+                    <span class="project-ico" aria-hidden="true">✅</span>
+                    <strong data-i18n="proj.deliveredLabel">Что сделано</strong>
+                  </p>
+                  <ul class="project-delivered-list">
+                    <li data-i18n="p2.l1">позиционирование</li>
+                    <li data-i18n="p2.l2">подача</li>
+                    <li data-i18n="p2.l3">визуальный ритм</li>
+                    <li data-i18n="p2.l4">упаковка работ</li>
+                  </ul>
+                </div>
+                <div class="project-tags">
+                  <span class="project-ico" aria-hidden="true">🏷️</span>
+                  <div class="project-tag-list">
+                    <span class="project-tag" data-i18n="p2.t1">#портфолио</span>
+                    <span class="project-tag" data-i18n="p2.t2">#личныйбренд</span>
+                    <span class="project-tag" data-i18n="p2.t3">#креатор</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
-          <article class="card project">
-            <h3 data-i18n="p3.h">Bot &amp; Funnel Page</h3>
-            <p data-i18n="p3.d">Промо-страница под воронку и digital-продукт с акцентом на конверсию и лёгкость восприятия.</p>
-            <p class="meta" data-i18n="p3.m">Что сделано: логика блоков, тексты, CTA, визуальный каркас.</p>
+          <article class="project-flip" tabindex="0" aria-labelledby="p3-h">
+            <div class="project-flip-inner">
+              <div class="project-flip-face project-flip-front">
+                <h3 id="p3-h" data-i18n="p3.h">Bot &amp; Funnel Page</h3>
+                <div class="project-flip-media">
+                  <img
+                    src="images/project3-bot-funnel.jpg"
+                    alt="Превью: Bot &amp; Funnel Page"
+                    data-i18n="p3.alt"
+                    data-i18n-attr="alt"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="750"
+                  >
+                </div>
+              </div>
+              <div class="project-flip-face project-flip-back">
+                <p class="project-focus project-focus--back">
+                  <span class="project-ico" aria-hidden="true">🎯</span>
+                  <span data-i18n="p3.d">Промо-страница под воронку и digital-продукт с акцентом на конверсию и лёгкость восприятия.</span>
+                </p>
+                <div class="project-delivered">
+                  <p class="project-delivered-title">
+                    <span class="project-ico" aria-hidden="true">✅</span>
+                    <strong data-i18n="proj.deliveredLabel">Что сделано</strong>
+                  </p>
+                  <ul class="project-delivered-list">
+                    <li data-i18n="p3.l1">логика блоков</li>
+                    <li data-i18n="p3.l2">тексты</li>
+                    <li data-i18n="p3.l3">CTA</li>
+                    <li data-i18n="p3.l4">визуальный каркас</li>
+                  </ul>
+                </div>
+                <div class="project-tags">
+                  <span class="project-ico" aria-hidden="true">🏷️</span>
+                  <div class="project-tag-list">
+                    <span class="project-tag" data-i18n="p3.t1">#воронка</span>
+                    <span class="project-tag" data-i18n="p3.t2">#промо</span>
+                    <span class="project-tag" data-i18n="p3.t3">#чатбот</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
-          <article class="card project">
-            <h3 data-i18n="p4.h">Concept Site for AI Creator</h3>
-            <p data-i18n="p4.d">Сайт с упором на трендовую подачу, сильный первый экран и ощущение “это хочется переслать”.</p>
-            <p class="meta" data-i18n="p4.m">Что сделано: creative direction, структура, визуальная концепция.</p>
+          <article class="project-flip" tabindex="0" aria-labelledby="p4-h">
+            <div class="project-flip-inner">
+              <div class="project-flip-face project-flip-front">
+                <h3 id="p4-h" data-i18n="p4.h">Concept Site for AI Creator</h3>
+                <div class="project-flip-media">
+                  <img
+                    src="images/project4-ai-creator.jpg"
+                    alt="Превью: Concept Site for AI Creator"
+                    data-i18n="p4.alt"
+                    data-i18n-attr="alt"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="750"
+                  >
+                </div>
+              </div>
+              <div class="project-flip-face project-flip-back">
+                <p class="project-focus project-focus--back">
+                  <span class="project-ico" aria-hidden="true">🎯</span>
+                  <span data-i18n="p4.d">Сайт с упором на трендовую подачу, сильный первый экран и ощущение «это хочется переслать».</span>
+                </p>
+                <div class="project-delivered">
+                  <p class="project-delivered-title">
+                    <span class="project-ico" aria-hidden="true">✅</span>
+                    <strong data-i18n="proj.deliveredLabel">Что сделано</strong>
+                  </p>
+                  <ul class="project-delivered-list">
+                    <li data-i18n="p4.l1">creative direction</li>
+                    <li data-i18n="p4.l2">структура</li>
+                    <li data-i18n="p4.l3">визуальная концепция</li>
+                  </ul>
+                </div>
+                <div class="project-tags">
+                  <span class="project-ico" aria-hidden="true">🏷️</span>
+                  <div class="project-tag-list">
+                    <span class="project-tag" data-i18n="p4.t1">#концепт</span>
+                    <span class="project-tag" data-i18n="p4.t2">#AI</span>
+                    <span class="project-tag" data-i18n="p4.t3">#hero</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -355,7 +535,7 @@
         <h2 data-i18n="cta.h2">Если тебе нужен сайт, который выглядит сильно и ощущается современно — давай соберём</h2>
         <p data-i18n="cta.p">Могу помочь с концепцией, структурой, упаковкой и реализацией. От первого вайба до готовой страницы.</p>
         <div class="cta-row">
-          <a href="#contacts" class="btn btn-primary" data-i18n="cta.b1">Написать мне</a>
+          <button type="button" class="btn btn-primary cursor-target" data-contact-modal-open data-i18n="cta.b1">Написать мне</button>
           <a href="#projects" class="btn btn-ghost" data-i18n="cta.b2">Посмотреть работы</a>
         </div>
       </div>
@@ -376,6 +556,99 @@
       </div>
     </div>
   </footer>
+
+  <div class="contact-modal" id="contactModal" hidden data-contact-modal>
+    <div class="contact-modal__backdrop" data-contact-modal-close tabindex="-1"></div>
+    <div
+      class="contact-modal__panel cursor-target"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contactModalTitle"
+      tabindex="-1"
+    >
+      <button
+        type="button"
+        class="contact-modal__close"
+        data-contact-modal-close
+        data-i18n="modal.closeAria"
+        data-i18n-attr="aria-label"
+        aria-label="Закрыть окно"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+      <h2 id="contactModalTitle" class="contact-modal__title" data-i18n="modal.title">Написать мне</h2>
+      <p class="contact-modal__lead" data-i18n="modal.lead">Оставьте контакты — я отвечу в ближайшее время.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="contact-form__fields" data-contact-form-fields>
+          <label class="contact-form__label">
+            <span class="contact-form__label-text" data-i18n="modal.labelName">Имя</span>
+            <input
+              class="contact-form__input"
+              type="text"
+              name="name"
+              id="contactName"
+              autocomplete="name"
+              required
+              data-i18n="modal.placeholderName"
+              data-i18n-attr="placeholder"
+              placeholder="Как к вам обращаться"
+            >
+          </label>
+          <label class="contact-form__label">
+            <span class="contact-form__label-text" data-i18n="modal.labelEmail">Электронная почта</span>
+            <input
+              class="contact-form__input"
+              type="email"
+              name="email"
+              id="contactEmail"
+              autocomplete="email"
+              required
+              inputmode="email"
+              data-i18n="modal.placeholderEmail"
+              data-i18n-attr="placeholder"
+              placeholder="name@example.com"
+            >
+          </label>
+          <label class="contact-form__label">
+            <span class="contact-form__label-text" data-i18n="modal.labelPhone">Телефон</span>
+            <input
+              class="contact-form__input"
+              type="tel"
+              name="phone"
+              id="contactPhone"
+              autocomplete="tel"
+              inputmode="tel"
+              data-i18n="modal.placeholderPhone"
+              data-i18n-attr="placeholder"
+              placeholder="+7 (___) ___-__-__"
+            >
+          </label>
+          <p class="contact-form__error" id="contactConsentError" role="alert" hidden data-i18n="modal.consentError">
+            Нужно согласие на обработку персональных данных.
+          </p>
+          <p
+            class="contact-form__error"
+            id="contactSendError"
+            role="alert"
+            hidden
+            tabindex="-1"
+            data-i18n="modal.sendError"
+          >
+            Не удалось отправить заявку. Попробуйте позже или напишите в Telegram.
+          </p>
+          <label class="contact-form__consent">
+            <input class="contact-form__checkbox" type="checkbox" name="consent" id="contactConsent" value="1">
+            <span class="contact-form__consent-text" data-i18n="modal.consent">Даю согласие на обработку моих персональных данных</span>
+          </label>
+          <button type="submit" class="btn btn-primary contact-form__submit" data-i18n="modal.submit">Отправить</button>
+        </div>
+        <div class="contact-modal__success" id="contactModalSuccess" hidden data-contact-success>
+          <p class="contact-modal__success-text" data-i18n="modal.thanks">Спасибо! Я свяжусь с вами.</p>
+          <button type="button" class="btn btn-ghost" data-contact-modal-close data-i18n="modal.gotIt">Понятно</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <div class="lang-switch-bar" role="region" aria-label="Язык / Language">
     <span class="lang-switch-label" id="langLabelRu" data-i18n-ignore>RU</span>
